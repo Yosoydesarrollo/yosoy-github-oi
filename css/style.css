@@ -1,0 +1,345 @@
+/*declarar constantes de diseño para las 
+fuentes, colores y recursos*/
+
+:root {
+    --textos: 'Lato', sans-serif;
+    --titulos: 'Roboto', sans-serif;
+    --colorFondo: rgb(238, 224, 224);
+    --colorHeader: rgba(41, 36, 36, 0.6);
+    --colorFooter: #000;
+}
+
+
+/* estilos para el cuerpo (body)
+   se utiliza el selector de etiqueta*/
+
+
+/*configuraciones globales*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--textos);
+    font-size: 1.2rem;
+    background-image: url(images/background.jpg;)
+    /*rem representa 12 px*/
+}
+
+h1 {
+    font-family: var(--titulos);
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: rgb(240, 9, 9)
+}
+
+h2,
+h3,
+h4 {
+    font-size: 1.8rem;
+    font-family: var(--titulos);
+}
+
+h6 {
+    color: rgb(247, 242, 242);
+    background: white;
+    position: absolute;
+    left: 100px;
+    background-color: rgb(5, 4, 4);
+    height: 20px;
+    padding: 2px;
+    border-radius: 20%;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+
+
+/*sintaxis para las clases en css es con punto (.)*/
+
+.home-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.6)), url('../images/background.jpg') no-repeat center top;
+    background-size: cover;
+    color: #000;
+}
+
+
+/*header*/
+
+header {
+    position: fixed;
+    /*fija el elemento en el html*/
+    width: 100%;
+    background-color: var(--colorHeader);
+    padding: 10px;
+    height: 33%;
+}
+
+header img {
+    left: 11px;
+    height: auto;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: rgb(4, 3, 14);
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+header nav a:hover {
+    color: #ecddec;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header nav a.active {
+    color: rgb(147, 52, 167) !important;
+    /* background-color: #6b066e3f; */
+    border-radius: 3px;
+}
+
+
+/*home*/
+
+
+/*los identificadores (id) en el html, su sintaxis en css es el numeral (#) */
+
+#home {
+    text-align: center;
+    padding: 200px 0 150px;
+}
+
+#home h1 {
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+#home p {
+    font-size: 1.4rem;
+    margin-top: 40px;
+    color: #fff;
+    margin-left: 20%;
+}
+
+#home .social {
+    margin-top: 80px;
+}
+
+#home .social a {
+    color: var(--colorFondo);
+    display: inline-block;
+    background-color: var(--colorFooter);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    line-height: 50px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+#home .social a:hover {
+    background-color: #632aa5;
+}
+
+#home {
+    text-align: center;
+    padding: 200px 0 150px;
+}
+
+#home h1 {
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+#home p {
+    font-size: 1.4rem;
+    margin-top: 40px;
+    color: #fff;
+}
+
+#home .divider {
+    width: 250px;
+    margin: 0 auto;
+    border-top: 5px solid #55125e;
+}
+
+#home .social {
+    margin-top: 80px;
+}
+
+#home .social a:hover {
+    background-color: #6a06ad;
+}
+
+
+/*secciones*/
+
+section {
+    padding: 80px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 50%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 70px;
+    color: white;
+}
+
+
+/*servicios*/
+
+#servicios .box {
+    display: inline-block;
+    padding-left: 30%;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+}
+
+h3,
+h6 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2
+/*Portafolio*/
+
+.box {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    padding: 1%;
+    border: solid 3px white;
+}
+
+
+/* organizacin */
+
+#organizacion .box h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container {
+    background-color: #251A5D;
+    margin-left: 1px;
+    border-radius: 4px;
+    border: solid 3px black;
+    width: 100%;
+    margin-left: 1px;
+}
+
+img {
+    margin-left: 90px;
+    border: solid 7px white;
+    border-radius: 33%;
+}
+
+#portafolio {
+    background-color: #006e8e
+}
+
+.parrafo {
+    margin-left: 33%;
+    color: #09020c;
+}
+
+p {
+    margin-left: 30%;
+    color: white;
+}
+
+br {
+    background-color: #666e91;
+    color: #55125e;
+}
+
+iframe {
+    border: solid 3px black;
+}
+
+.box {
+    background-color: #6a50fb;
+    border: solid 3px white;
+}
+
+h4 {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.whatsapp {
+    background-color: violet
+}
+
+a.btn-wsp {
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+}
+
+.whatsapp {
+    background-color: #20ba5a;
+}
+
+.publicidad {
+    background-color: #727e83;
+}
+
+.cuerpo {
+    background-image: url("images/background.jpg");
+}
+
+.enlace {
+    background-color: #55125e;
+    margin-left: 44%;
+    margin-right: 33%;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 15%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
